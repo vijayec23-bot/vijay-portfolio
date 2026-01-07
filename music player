@@ -1,0 +1,179 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Music Player UI</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+    body {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg, #1d2671, #c33764);
+    }
+    .player {
+      width: 320px;
+      background: #121212;
+      color: #fff;
+      border-radius: 24px;
+      padding: 20px;
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+      transition: transform 0.3s ease;
+    }
+    .player:hover {
+      transform: translateY(-6px);
+    }
+    .album-art {
+  width: 200px;
+  height: 260px;
+  border-radius: 16px;
+  background-image: url(img2.jpg); 
+  background-size: cover;        
+  background-position: center;   
+  background-repeat: no-repeat;  
+
+  margin: 0 auto 18px;           
+  position: relative;
+  overflow: hidden;
+}
+    .album-art::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+    }
+    .song-info {
+      text-align: center;
+      margin-bottom: 16px;
+    }
+    .song-info h3 {
+      font-size: 18px;
+      font-weight: 600;
+    }
+    .song-info p {
+      font-size: 14px;
+      color: #aaa;
+      margin-top: 4px;
+    }
+    .progress-container {
+      margin: 14px 0;
+    }
+    .progress-bar {
+      width: 100%;
+      height: 6px;
+      background: #333;
+      border-radius: 10px;
+      overflow: hidden;
+      cursor: pointer;
+    }
+    .progress {
+      width: 45%;
+      height: 100%;
+      background: linear-gradient(90deg, #1db954, #1ed760);
+      border-radius: 10px;
+      transition: width 0.3s ease;
+    }
+    .time {
+      display: flex;
+      justify-content: space-between;
+      font-size: 12px;
+      color: #aaa;
+      margin-top: 6px;
+    }
+    .controls {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 18px;
+    }
+    .control-btn {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background: #1e1e1e;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: all 0.25s ease;
+    }
+    .control-btn:hover {
+      background: #1db954;
+      transform: scale(1.1);
+    }
+    .play-btn {
+      width: 56px;
+      height: 56px;
+      background: #1db954;
+      box-shadow: 0 8px 20px rgba(29, 185, 84, 0.6);
+    }
+    .play-btn:hover {
+      background: #1ed760;
+    }
+    .icon {
+      font-size: 16px;
+      user-select: none;
+    }
+    .volume {
+      margin-top: 18px;
+    }
+    .volume label {
+      font-size: 12px;
+      color: #aaa;
+    }
+    .volume-bar {
+      width: 100%;
+      height: 6px;
+      background: #333;
+      border-radius: 10px;
+      margin-top: 6px;
+      overflow: hidden;
+      cursor: pointer;
+    }
+    .volume-level {
+      width: 70%;
+      height: 100%;
+      background: #1db954;
+      border-radius: 10px;
+      transition: width 0.3s ease;
+    }
+  </style>
+</head>
+<body>
+  <div class="player">
+    <div class="album-art"></div>
+    <div class="song-info">
+      <h3>JanaNayagan </h3>
+      <p>Anirudh</p>
+    </div>
+    <div class="progress-container">
+      <div class="progress-bar">
+        <div class="progress"></div>
+      </div>
+      <div class="time">
+        <span>1:45</span>
+        <span>3:50</span>
+      </div>
+    </div>
+    <div class="controls">
+      <div class="control-btn"><span class="icon">⏮</span></div>
+      <div class="control-btn play-btn"><span class="icon">▶</span></div>
+      <div class="control-btn"><span class="icon">⏭</span></div>
+    </div>
+    <div class="volume">
+      <label>Volume</label>
+      <div class="volume-bar">
+        <div class="volume-level"></div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
