@@ -1,0 +1,101 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SaaS Homepage</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body { font-family: Inter, system-ui, sans-serif; }
+  </style>
+</head>
+<body class="bg-white text-gray-900">
+<section class="max-w-7xl mx-auto px-6 py-24 grid md:grid-cols-2 gap-12 items-center">
+  <div>
+    <h1 class="text-5xl font-bold leading-tight">
+      Run your business <span class="text-indigo-600">from one dashboard</span>
+    </h1>
+    <p class="mt-6 text-lg text-gray-600">
+      Automate workflows, track performance, and collaborate in real time.
+    </p>
+    <div class="mt-8 flex gap-4">
+      <button class="px-6 py-3 bg-indigo-600 text-white rounded-xl font-medium hover:bg-indigo-700">
+        Start free trial
+      </button>
+      <button class="px-6 py-3 border rounded-xl font-medium">
+        View demo
+      </button>
+    </div>
+  </div>
+ <div class="rounded-2xl overflow-hidden shadow-lg">
+  <img 
+    src="assets/Screenshot 2025-12-24 090857.png" 
+    alt="Dashboard preview"
+    class="w-full h-auto object-cover"
+  />
+</div>
+</section>
+<section class="border-t py-12">
+  <div class="max-w-6xl mx-auto px-6 text-center">
+    <p class="text-gray-500 mb-6">Trusted by 10,000+ teams</p>
+    <div class="flex justify-center items-center gap-10 flex-wrap">
+  <img src="assets/1.png" alt="Company 1" class="h-8 opacity-70 hover:opacity-100 transition" />
+  <img src="assets/2.png" alt="Company 2" class="h-8 opacity-70 hover:opacity-100 transition" />
+  <img src="assets/3.png" alt="Company 3" class="h-8 opacity-70 hover:opacity-100 transition" />
+  <img src="assets/4.png" alt="Company 4" class="h-8 opacity-70 hover:opacity-100 transition" />
+</div>
+  </div>
+</section>
+<section class="max-w-7xl mx-auto px-6 py-24">
+  <h2 class="text-4xl font-bold text-center mb-16">
+    Everything you need to scale
+  </h2>
+  <div class="grid md:grid-cols-3 gap-10">
+    <div class="p-8 rounded-2xl border hover:shadow-md transition">
+      <h3 class="text-xl font-semibold mb-2">Automated Workflows</h3>
+      <p class="text-gray-600">Save hours every week with smart automation.</p>
+    </div>
+    <div class="p-8 rounded-2xl border hover:shadow-md transition">
+      <h3 class="text-xl font-semibold mb-2">Real-time Analytics</h3>
+      <p class="text-gray-600">Track performance with live insights.</p>
+    </div>
+    <div class="p-8 rounded-2xl border hover:shadow-md transition">
+      <h3 class="text-xl font-semibold mb-2">Team Collaboration</h3>
+      <p class="text-gray-600">Work together seamlessly in one place.</p>
+    </div>
+  </div>
+</section>
+<section class="bg-indigo-600 py-20 text-center text-white">
+  <h2 class="text-4xl font-bold mb-4">Start saving time today</h2>
+  <p class="mb-8 text-indigo-100">Try it free. No credit card required.</p>
+  <button class="px-8 py-3 bg-white text-indigo-600 rounded-xl font-semibold">
+    Get Started
+  </button>
+</section>
+<footer class="border-t py-12">
+  <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-4 gap-8 text-sm text-gray-600">
+    <div>
+      <h4 class="font-semibold text-gray-900 mb-2">Product</h4>
+      <p>Features</p>
+      <p>Pricing</p>
+    </div>
+    <div>
+      <h4 class="font-semibold text-gray-900 mb-2">Company</h4>
+      <p>About</p>
+      <p>Careers</p>
+    </div>
+    <div>
+      <h4 class="font-semibold text-gray-900 mb-2">Resources</h4>
+      <p>Docs</p>
+      <p>Blog</p>
+    </div>
+    <div>
+      <h4 class="font-semibold text-gray-900 mb-2">Legal</h4>
+      <p>Privacy</p>
+      <p>Terms</p>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
